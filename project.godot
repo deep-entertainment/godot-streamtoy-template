@@ -1,0 +1,42 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[ {
+"base": "Node",
+"class": "TwitchHandler",
+"language": "GDScript",
+"path": "res://addons/streamtoy-client/twitch_handler.gd"
+} ]
+_global_script_class_icons={
+"TwitchHandler": ""
+}
+
+[application]
+
+config/name="streamtoy-frontend"
+run/main_scene="res://test.tscn"
+config/icon="res://icon.png"
+
+[autoload]
+
+StreamToy="*res://addons/streamtoy-client/streamtoy_client.gd"
+
+[editor_plugins]
+
+enabled=PoolStringArray( "res://addons/streamtoy-client/plugin.cfg" )
+
+[physics]
+
+common/enable_pause_aware_picking=true
+
+[rendering]
+
+environment/default_clear_color=Color( 0, 0, 0, 1 )
+environment/default_environment="res://default_env.tres"
