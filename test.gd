@@ -8,13 +8,13 @@ extends Control
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	StreamToy.connect_server("127.0.0.1", 8081)
 	StreamToy.connect("is_connected", self, "_is_connected")
+	StreamToy.connect_server("localhost", 8081)
 	$RichTextLabel.text = ""
 	
 
 func _is_connected():
-	StreamToy.get_handler("twitch").twitch_broadcaster_user_id = "123"
+	StreamToy.get_handler("twitch").twitch_broadcaster_user_id = "12826"
 	StreamToy.get_handler("twitch").subscribe()
 	StreamToy.get_handler("twitch").connect("notification", self, "_on_StreamtoyClient_notification")
 

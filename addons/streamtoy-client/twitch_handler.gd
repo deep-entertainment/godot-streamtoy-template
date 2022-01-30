@@ -22,7 +22,7 @@ func _twitch_subscribe():
 	})
 	
 	rpc("twitch_subscribe", "channel.raid", {
-		"broadcaster_user_id": twitch_broadcaster_user_id
+		"to_broadcaster_user_id": twitch_broadcaster_user_id
 	})
 	
 
