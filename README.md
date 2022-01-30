@@ -9,3 +9,5 @@ and subscribes to twitch events.
 If a twitch event is received, a short bbcode-label animation is presented.
 
 This is a reference implementation of a StreamToy frontend and will be the base of a game template.
+
+See the [deep entertainment issues repository](https://github.com/deep-entertainment/issues/issues) if you have problems or new ideas for the project.
