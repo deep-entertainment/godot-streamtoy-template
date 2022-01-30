@@ -1,4 +1,4 @@
-![[icon.png]]
+![](icon.png)
 # Streamtoy test game
 
 StreamToy is a framework for attaching a Godot based application and game to a streamer service to trigger actions in Godot when certain events in streams happen.
