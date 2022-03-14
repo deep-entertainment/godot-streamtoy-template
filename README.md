@@ -16,4 +16,13 @@ To test this application against your stream, set the following environment vari
 * STREAMTOY_TOKEN: Shared authentication token
 * STREAMTOY_TWITCH_USER_ID: Twitch user id to follow in the test application
 
+# Warning for production use
+
+This repository includes an export preset for an HTML export. If you add an export template that includes private data, please ignore the export_presets.cfg file
+in the .gitignore.
+
+# Issues
+
 See the [deep entertainment issues repository](https://github.com/deep-entertainment/issues/issues) if you have problems or new ideas for the project.
+
+
