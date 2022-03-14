@@ -10,23 +10,43 @@ config_version=4
 
 _global_script_classes=[ {
 "base": "Node",
+"class": "AuthHandler",
+"language": "GDScript",
+"path": "res://addons/streamtoy-client/auth_handler.gd"
+}, {
+"base": "Node",
+"class": "PingHandler",
+"language": "GDScript",
+"path": "res://addons/streamtoy-client/ping_handler.gd"
+}, {
+"base": "Node",
 "class": "TwitchHandler",
 "language": "GDScript",
 "path": "res://addons/streamtoy-client/twitch_handler.gd"
 } ]
 _global_script_class_icons={
+"AuthHandler": "",
+"PingHandler": "",
 "TwitchHandler": ""
 }
 
 [application]
 
 config/name="streamtoy-frontend"
-run/main_scene="res://test.tscn"
+run/main_scene="res://example.tscn"
+boot_splash/image="res://icon.png"
+boot_splash/fullsize=false
+boot_splash/bg_color=Color( 0.141176, 0.141176, 0.141176, 0 )
 config/icon="res://icon.png"
 
 [autoload]
 
 StreamToy="*res://addons/streamtoy-client/streamtoy_client.gd"
+
+[display]
+
+window/per_pixel_transparency/allowed=true
+window/per_pixel_transparency/enabled=true
 
 [editor_plugins]
 
@@ -38,5 +58,5 @@ common/enable_pause_aware_picking=true
 
 [rendering]
 
-environment/default_clear_color=Color( 0, 0, 0, 1 )
+environment/default_clear_color=Color( 0.301961, 0.301961, 0.301961, 0 )
 environment/default_environment="res://default_env.tres"

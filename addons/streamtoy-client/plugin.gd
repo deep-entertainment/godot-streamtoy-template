@@ -1,3 +1,4 @@
+# StreamToy - client plugin
 tool
 extends EditorPlugin
 
@@ -7,4 +8,4 @@ func _enter_tree() -> void:
 
 
 func _exit_tree() -> void:
-	pass
+	remove_autoload_singleton("StreamToy")
